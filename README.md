@@ -1,9 +1,18 @@
 # gc-plugins
 
->
+>A continuously developed self-use npm plugin
 
 ## components
 
 # GcInput
-type: text/password...
-rules(blur): [{'msg', 'verify(Fun)'}]
+props:{
+  type: '',
+  rules: [
+    {
+      msg: '',
+      verify: () => {
+        return false
+      }
+    }
+  ]
+}
